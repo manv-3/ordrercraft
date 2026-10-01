@@ -5,9 +5,9 @@
   "outputDirectory": "dist/frontend/browser",
   "rewrites": [
     {
-      "source" : "/api(.*)",
-      "destination":"https://ordercraft-backend.onrender.com"
-    }
+      "source": "/api/:match*",
+      "destination": "https://ordercraft-backend.onrender.com/api/:match*"
+    },
     {
       "source": "/(.*)",
       "destination": "/index.html"

@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: ordercraft-backend
+    runtime: docker
+    rootDir: HCL-FSD-Project
+    dockerfilePath: Dockerfile
+    plan: free
+    region: oregon
+    envVars:
+      - key: PORT
+        value: 8082
+      - key: JAVA_TOOL_OPTIONS
+        value: "-Xmx400m"
